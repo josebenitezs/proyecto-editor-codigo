@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor De Codigo</title>
+
+    <!-- link de conecciones a las carpetas de estylo CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- textarea me sirve para hacer el editor de texto  -->
+        <textarea onkeyup="update()" id="text" class="text" placeholder="Escribe tu código aquí"></textarea>
+
+        <!-- iframe me sirve para hacer el cuadro para ver lo que estoy haciendo en mi editor  -->
+        <iframe id="view" srcdoc="<h1>Hola mundo</h1>"></iframe>
+    </div>
+
+    <!-- esta es la coneccion a mi carpeta de javascrip  -->
+    <script src="./js/app.bundle.js"></script>
+</body>
+
+</html>
